@@ -61,8 +61,8 @@ def train_agent(env, agent, buffer_size, train_trigger_size, sample_size, NUM_EP
         print(f"Episode {episode}: Total reward = {total_rewards[-1]}, Mean reward = {mean_rewards[-1]}")
     
     # Create animation
-    #anim = animation.ArtistAnimation(fig, ims, interval=200, blit=True)
-    #anim.save('./GoldDigger.gif', writer='imagemagick',fps=10)  # ,dpi= 300)
+    anim = animation.ArtistAnimation(fig, ims, interval=200, blit=True)
+    anim.save('./GoldDigger.gif', writer='imagemagick',fps=10)  # ,dpi= 300)
 
 
     return  episode_rewards, mean_rewards, total_rewards
