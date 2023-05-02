@@ -65,9 +65,6 @@ class GoldDiggerEnvironment:
                 has_gold = False
                 has_fire = False
 
-
-
-
         new_state = (location, has_gold, has_fire)
         return new_state, reward, done
 
